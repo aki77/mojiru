@@ -1,5 +1,8 @@
-require "mojiru/version"
+require 'mojiru/version'
+require 'mojiru/string'
 
 module Mojiru
-  # Your code goes here...
+  refine ::String do
+    include String
+  end
 end
